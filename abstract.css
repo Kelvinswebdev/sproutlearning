@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .topnav {
+    background-color: #000000;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+  
+  .topnav ul {
+    list-style: none;   
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .topnav li {
+    margin: 0 15px;
+  }
+  
+  .topnav a {
+    text-decoration: none;
+    color: #e2e2e2;
+  
+  }
+  
+  .social-icons {
+    display: flex; /* Ensure icons are in a row */
+  }
+  .social-icons a {
+    margin-left: 10px;
+    color: #00ff62;
+  }
+  
+  /* the styling for the second navbar starts here */
+  
+  .secondnav {
+    background-color: rgb(231, 255, 231);
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+  }
+  
+  .secondnav ul {
+    list-style: none;   
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .secondnav li {
+    margin: 0 15px;
+  }
+  
+  .secondnav a {
+    text-decoration: none;
+    color: rgb(56, 56, 56);
+    
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 999;
+  }
+  
+  
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
+  }
+  
+  .dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+  }
+  
+  .dropdown-content:hover {
+    background-color: #28a745;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* HAMBURGER MENU */
+  .hamburger {
+    display: none; /* Hide by default */
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  /* Sidebar Navigation for Mobile */
+  .nav-menu {
+    position: fixed;
+    left: -250px; /* Initially hidden */
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: #000;
+    color: white;
+    transition: left 0.3s ease-in-out;
+    /* display: flex; */
+    flex-direction: column;
+    padding-top: 60px;
+    z-index: 999;
+  }
+  
+  .nav-menu ul{
+    list-style-type: none;
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    display: block;
+    font-size: 18px;
+  }
+  
+  .nav-menu a:hover {
+    background: #333;
+  }
+  
+  /* Show menu when active */
+  .nav-menu.active {
+    left: 0;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .secondnav ul {
+        display: none; /* Hide menu items */
+    }
+  
+    .hamburger {
+        display: block; /* Show hamburger icon */
+    }
+  }
+  
+  .close-btn{
+    cursor: pointer;
+  }
+
+
+.abstract{
+    display: flex;
+    margin:100px  auto;
+    max-width: 1100px;
+    gap: 50px;
+}
+
+
+
+.ableft,.abright{
+    width: 50%;
+}
+
+@media screen and (max-width:992px){
+  .abstract{
+    flex-direction: column-reverse;
+    padding: 30px;
+    margin: 30px auto;
+  }
+}
+
+
+.ableft{
+  background-color: #daffe8;
+  padding: 30px;
+}
+
+@media screen and (max-width:992px){
+  .ableft,.abright{
+    width: 100%;
+  }
+}
+
+  .container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+}
+
+.header {
+  
+    height: 400px;
+    background-image:linear-gradient(to left,rgba(0,0,0,0.7),rgba(14, 14, 14, 1)),url("pics/acra.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+  
+  
+  @media screen and (max-width:992px){
+    .header{
+      flex-direction: column-reverse;
+      padding: 20px 30px;
+      gap: 10px;
+      width: 100%;
+    }
+  }
+
+
+  .text-container div{
+    text-align: center;
+    color: white;
+  }
+  
+  .text-container button{
+    color: white;
+    background-color: green;
+    border-radius: 50px;
+    border: none;
+    margin-top: 20px;
+  }
+  
+  .text-container button a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+  
+  }
+  
+
+  .submission{
+    background-color: #00ff62;
+    max-width: 900px;
+    margin: auto;
+    height: 100px;
+    box-shadow: 0px 7px 30px -20px;
+    position: relative;
+    bottom: 50px;
+    border-radius: 10px;
+  }
+
+
+form{
+    padding: 30px;
+}
+label {
+    font-weight: bold;
+    padding-top: 15px;
+}
+input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #218838;
+}
+
+.callforabstract{
+  margin-top: 50px;
+}
+
+.publicationformat{
+  max-width: 1100px;
+  margin: auto;
+}
+
+
+
+@media screen and (max-width:992px){
+  .publicationformat{
+    padding: 30px;
+  }
+}

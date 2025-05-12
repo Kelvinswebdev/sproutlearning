@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FristAfricaConf.2025</title>
+    <link rel="icon" href="pics/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="abstract.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    
+  <nav class="topnav">
+    <ul>
+        <!-- <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="#">Forum</a></li> -->
+    </ul>
+    <div class="social-icons">
+        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>
+</nav>
+
+<nav class="secondnav navhide">
+  <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  <img src="pics/logo.png" width="200" alt="">
+
+<ul>
+    <li class="dropdown">
+        <a href="index.html">Home</a>
+        <div class="dropdown-content">
+            <a href="#">Software 1</a>
+            <a href="#">Software 2</a>
+            <a href="#">Software 3</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="about.html">About</a>
+    </li>
+    <li class="dropdown">
+        <a href="conference.html">Conference</a>
+    </li>
+    <li class="dropdown">
+        <a href="#">Learning & Support</a>
+        <div class="dropdown-content">
+            <a href="#">Tutorials</a>
+            <a href="#">FAQ</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="#">Download</a>
+        
+    </li>
+</ul>
+</nav>
+
+<!-- Sidebar Navigation -->
+<div class="nav-menu" id="menu">
+    <div>
+        <!-- <img src="pics/logo.png" alt=""> -->
+    </div>
+  <ul>
+  <span class="close-btn" onclick="toggleMenu()">&times;</span> <!-- Close Button -->
+
+      <li class="">
+          <a href="index.html">Home</a>
+      </li>
+      <li class="">
+          <a href="about.html">About</a>
+      </li>
+      <li class="">
+        <a href="conference.html">Conference</a>
+      </li>
+      <li class="">
+          <a href="#" >Learning & Support</a>
+      </li>
+      <li><a href="#">Download</a></li>
+  </ul>
+</div>
+
+
+<header class="header">
+        
+    <div class="text-container">
+      <div>
+        <h1 class="animated-text">Upload your abstract</h1>
+        <p>Submissions can be made via email or directly uploaded to the AFRICAReloop website.  </p>
+        <!-- <p><button><a href="abstract.html">Upload Abstract</a></button></p> -->
+      </div>
+    </div> 
+</header>
+
+
+
+
+<div class="abstract">
+    <div class="ableft">
+        <h1>Abstract Submission</h1>
+        <p>We invite academics, researchers, non-governmental organizations, community-based organizations, civil society groups, government ministries, departments, and agencies (MDAs), as well as development organizations to submit abstracts for the 1st African Recycling Initiative Conference in Accra. Submissions can be made via email or directly uploaded to the AFRICAReloop website.  </p>
+    
+        <div class="callforabstract">
+            <h1 style="font-size: 16px;">Call for Abstracts Format </h1>
+            <p><b>Title: </b>(Concise and relevant to the conference theme) </p>
+            <p><b>Author(s):</b>(Full Name, Affiliation, Contact Information) </p>
+            <p><b>Abstract:</b>(250–300 words max, summarizing the research) </p>
+            <p><b>Keywords:</b> (5–7 relevant keywords) </p>
+    
+        </div>
+
+        <div class="callforabstract">
+            <h1 style="font-size: 16px;">Call for Abstracts Format </h1>
+            <p>(In MS Word, single-line spacing and Times New Roman font 12, single paragraph without subheading, indentation, or references. Should be an explicit summary of your presentation that states the problem, aim, methodology, and key results and conclusion). Kindly attach proof of the $5 payment (at 14 GHS or 1,1500NGN to $1) for abstract processing fee payment and publication in book of proceeding. </p>
+    
+        </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    <div class="abright">
+        <div class="container">
+                       <form id="uploadForm" enctype="multipart/form-data">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+          
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+          
+                <label for="affiliation">Affiliation/Organization:</label>
+                <input type="text" id="affiliation" name="affiliation" required><br><br>
+          
+                <label for="title">Abstract Title:</label>
+                <input type="text" id="title" name="title" required><br><br>
+          
+                <label for="category">Category:</label>
+                <select id="category" name="category" required>
+                    <option value="Recycling Technologies">Community Engagement and Awareness</option>
+                    <option value="Sustainable Materials">Industry-Specific Recycling Approaches</option>
+                    <option value="Waste Management">Waste-to-Energy and Resource Recovery</option>
+                    <option value="Circular Economy">Regional and Global Collaboration</option>
+                </select><br><br>
+          
+                <label for="abstract">Abstract (Max 300 words):</label>
+                <textarea id="abstract" name="abstract" rows="5" maxlength="300" required></textarea><br><br>
+          
+                <label for="file">Upload Abstract (PDF/DOCX):</label>
+                <input type="file" id="file" name="file" accept=".pdf,.doc,.docx" required><br><br>
+          
+                <button type="submit">Submit Abstract</button>
+            </form>
+          
+              <div id="output"></div>
+            
+            
+            
+            
+            
+        </div>
+    </div>
+
+    
+</div>
+
+<div class="publicationformat">
+    <div class="publicationleft">
+        <h1>Publication Format:</h1>
+        <p>All accepted abstract will be published in the Africa Recycling Initiative Conference Accra Proceedings.</p>
+        <p>Full papers of quality abstract will be invited for submission and consideration for publication in Topical Collection and Relevant Journal on Sustainable Waste Management in Africa and indexed in relevant academic databases as well as other partner journals on environmental sustainability and circular economy practices. <a href="">(https://springer.com//journal/collection)</a> .</p>
+        <p>Conference Registration Fee: $30 (46,500 NGN or 420 GHS) for students, and $100 (155,300NGN or 1,400 GHS) for Professionals</p>   
+    </div>
+    <div class="publicationright">
+
+    </div>
+</div>
+
+
+
+<script>
+    document.getElementById('uploadForm').addEventListener('submit', async function(event) {
+    event.preventDefault();
+
+    let fileInput = document.getElementById('file').files[0];
+    let reader = new FileReader();
+
+    reader.onload = async function() {
+    let formData = new FormData();
+    formData.append('name', document.getElementById('name').value);
+    formData.append('email', document.getElementById('email').value);
+    formData.append('title', document.getElementById('title').value);
+    formData.append('email', document.getElementById('email').value);
+    formData.append('category', document.getElementById('category').value);
+    formData.append('abstract', document.getElementById('abstract').value);
+    formData.append('file', reader.result.split(',')[1]); // Base64 encoded file
+    formData.append('filename', fileInput.name);
+    formData.append('mimetype', fileInput.type);
+    
+    try {
+        let response = await fetch("https://script.google.com/macros/s/AKfycbz-arAHhC-kg0YyrbS8ypNi0SM3YomQm695ysg2JyenQGl0VsRN3YVozttUAImL_Ku-0g/exec", {
+            method: 'POST',
+            body: formData
+        });
+        let result = await response.json();
+        alert(result.message);
+    } catch (error) {
+        console.error('Error:', error);
+        alert('An error occurred while submitting the form.');
+    }
+};
+
+reader.readAsDataURL(fileInput);
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/boot.js"></script>
+<script src="home.js"></script>
+
+
+
+
+</body>
+</html>
